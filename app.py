@@ -3,11 +3,11 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import streamlit as st
-from utils.database import init_db
-from pages.Home import show_home
-from pages.Task_Page import show_task_page
-from pages.Retrieve import show_retrieve
-from pages.History import show_history
+from database import init_db
+from Home import show_home
+from Task_Page import show_task_page
+from Retrieve import show_retrieve
+from History import show_history
 
 # 1. Page Configuration
 st.set_page_config(
